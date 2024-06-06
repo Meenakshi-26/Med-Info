@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="logo">
+          <img src="logo.png" alt="logo">
+        </a>
+        <ul class="links">
+          
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <button class="login-btn">Log In</button>
+      </nav>
+    </header>
+    <!--Popup Form-->
+    <div class="blur-bg-overlay"></div>
+       <div class="form-popup">
+        <span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+        </svg></span>
+        <div class="form-box login">
+          <div class="form-content">
+            <h2>LOGIN</h2>
+            <form action="#">
+              <div class="input-field">
+                <input type="email" placeholder="Email" required>
+              </div>
+              <div class="input-field">
+                <input type="password"  placeholder="password" required>
+              </div>
+              <a href="#" class="forgot-pass">Forgot Password?</a>
+              <button type="submit">Login</button>
+            </form>
+            <div class="bottom-link">
+              Don't have an account?
+              <a href="#" id="signup-link">Signup</a>
+            </div>
+          </div>
+        </div>
+        <div class="form-box signup">
+          <div class="form-content">
+            <h2>SIGNUP</h2>
+            <form action="#">
+              <div class="input-field">
+                <input type="text" placeholder="Enter your email" required>
+              </div>
+              <div class="input-field">
+                <input type="password" placeholder="Create Password" required>
+              </div>
+              <div class="input-field">
+                <select id="role" name="role" placeholder="Select" required>
+                  <option value="patient">Patient</option>
+                  <option value="nutritionist">Nutritionist</option>
+                  <option value="pharmacist">Pharmacist</option>
+                </select>
+              </div>
+              <div class="policy-text">
+                <input type="checkbox" id="policy">
+                <label for="policy">
+                  I agree the <a href="#">Terms & Conditions</a>
+                </label>
+              </div>
+              <button type="submit">Sign Up</button>
+            </form>
+            <div class="bottom-link">
+              Already have an account?
+              <a href="#" id="login-link">Login</a>
+            </div>
+          </div>
+        </div>
+       </div> 
+       <!--About section-->
+       
+  </body>
+</html>
